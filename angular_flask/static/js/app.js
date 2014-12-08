@@ -29,6 +29,10 @@ angular.module('AngularFlask', ['angularFlaskServices', 'restangular'])
             templateUrl: 'static/partials/display-all.html',
             controller: DisplayAllController
         })
+        .when('/calendar', {
+            templateUrl: 'static/partials/calendar.html',
+            controller: CalendarController
+        })
 		.otherwise({
 			redirectTo: '/'
 		})
